@@ -20,7 +20,7 @@ const Signup = () => {
        return setError("All fields are required.");
      }
      setError("");
-     const res = await axios.post("http://localhost:3000/api/shorturl/signup", { password: form.password, email:form.email, name:form.name }, {
+     const res = await axios.post("https://url-shortner-backend-one.vercel.app/api/shorturl/signup", { password: form.password, email:form.email, name:form.name }, {
        withCredentials: true,
      })
      console.log(res);

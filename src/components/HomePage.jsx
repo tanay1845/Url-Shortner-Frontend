@@ -14,7 +14,7 @@ const HomePage = () => {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      const response = await axios.post("http://localhost:3000/api/shorturl/url", {
+      const response = await axios.post("https://url-shortner-backend-one.vercel.app/api/shorturl/url", {
         url
       }, {
         withCredentials: true

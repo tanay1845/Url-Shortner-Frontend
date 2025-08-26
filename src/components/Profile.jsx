@@ -46,7 +46,7 @@ const Profile = () => {
 
   const fetchProfile = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/user/profile", {
+      const res = await axios.get("https://url-shortner-backend-one.vercel.app/user/profile", {
         withCredentials: true,
       });
       setUser(res.data.user);

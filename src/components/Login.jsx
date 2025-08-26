@@ -25,7 +25,7 @@ const Login = () => {
         return setError("All fields are required.");
       }
       setError("");
-      const res = await axios.post("http://localhost:3000/api/shorturl/login",
+      const res = await axios.post("https://url-shortner-backend-one.vercel.app/api/shorturl/login",
         {
           email:form.email, 
           password:form.password

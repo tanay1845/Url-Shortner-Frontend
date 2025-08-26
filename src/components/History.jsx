@@ -12,7 +12,7 @@ const History = () => {
   useEffect(() => {
     const fetchUrl = async () => {
       try {
-        await axios.get("http://localhost:3000/api/shorturl", { withCredentials: true })
+        await axios.get("https://url-shortner-backend-one.vercel.app/api/shorturl", { withCredentials: true })
           .then((res) => {
             setData(res.data.urls)
             // console.log(res.data.urls)
@@ -61,12 +61,12 @@ const History = () => {
               </td>
               <td className="px-4 sm:px-6 py-4 break-all">
                 <a
-                  href={`http://localhost:3000/${url.shortId}`}
+                  href={`https://url-shortner-frontend-bay.vercel.app/${url.shortId}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
                 >
-                  http://localhost:3000/{url.shortId}
+                  https://url-shortner-frontend-bay.vercel.app/{url.shortId}
                 </a>
               </td>
               <td>
