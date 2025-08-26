@@ -14,7 +14,7 @@ const Profile = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:3000/api/shorturl/logout", {
+      await axios.get("https://url-shortner-backend-one.vercel.app/api/shorturl/logout", {
         withCredentials: true,
       });
       setUser(null);
@@ -31,7 +31,7 @@ const Profile = () => {
       }
 
       await axios.put(
-        "http://localhost:3000/api/shorturl/edituser",
+        "https://url-shortner-backend-one.vercel.app/shorturl/edituser",
         { name },
         { withCredentials: true }
       );
