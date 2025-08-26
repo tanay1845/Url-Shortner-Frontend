@@ -62,12 +62,12 @@ const HomePage = () => {
     {shortId && (
       <div className="bg-indigo-300 px-4 py-3 rounded-md text-center break-all border-l-4 border-indigo-500 shadow-sm">
         <a
-          href={`http://localhost:3000/${shortId.newUrl.shortId}`}
+          href={`https://url-shortner-frontend-bay.vercel.app/${shortId.newUrl.shortId}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-black font-medium underline"
         >
-          http://localhost:3000/{shortId.newUrl.shortId}
+          https://url-shortner-frontend-bay.vercel.app/{shortId.newUrl.shortId}
         </a>
         {
           shortId.qrCodeImg && (
